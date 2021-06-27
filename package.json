@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-shift",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Remove and return the first element of a collection.",
   "license": "Apache-2.0",
   "author": {
