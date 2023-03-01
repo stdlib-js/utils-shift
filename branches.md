@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/shift"
-click B href "https://github.com/stdlib-js/utils-shift/tree/main"
-click C href "https://github.com/stdlib-js/utils-shift/tree/production"
-click D href "https://github.com/stdlib-js/utils-shift/tree/esm"
-click E href "https://github.com/stdlib-js/utils-shift/tree/deno"
-click F href "https://github.com/stdlib-js/utils-shift/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/shift"
+%% click B href "https://github.com/stdlib-js/utils-shift/tree/main"
+%% click C href "https://github.com/stdlib-js/utils-shift/tree/production"
+%% click D href "https://github.com/stdlib-js/utils-shift/tree/esm"
+%% click E href "https://github.com/stdlib-js/utils-shift/tree/deno"
+%% click F href "https://github.com/stdlib-js/utils-shift/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/shift
