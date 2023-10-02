@@ -45,19 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-shift
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import shift from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-shift@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-shift/tags). For example,
-
-```javascript
-import shift from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-shift@v0.1.0-esm/index.mjs';
+var shift = require( '@stdlib/utils-shift' );
 ```
 
 #### shift( collection )
@@ -80,7 +91,7 @@ var lastValue = out[ 1 ];
 In contrast to [`Array.prototype.shift`][mdn-array-shift] which returns only the removed element, the function also returns the shortened collection. For [typed arrays][mdn-typed-array] having a length greater than `0`, the returned collection is a new [typed array][mdn-typed-array] view.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var arr = new Float64Array( 2 );
 arr[ 0 ] = 1.0;
@@ -123,14 +134,9 @@ var lastValue = out[ 1 ];
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import shift from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-shift@esm/index.mjs';
+```javascript
+var Float64Array = require( '@stdlib/array-float64' );
+var shift = require( '@stdlib/utils-shift' );
 
 var arr;
 var out;
@@ -143,10 +149,6 @@ for ( i = 0; i < 100; i++ ) {
     console.log( 'Length: %d', arr.length );
 }
 console.log( arr );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -186,7 +188,7 @@ console.log( arr );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -216,8 +218,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/utils-shift.svg
 [npm-url]: https://npmjs.org/package/@stdlib/utils-shift
 
-[test-image]: https://github.com/stdlib-js/utils-shift/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/utils-shift/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/utils-shift/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/utils-shift/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-shift/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-shift?branch=main
@@ -258,11 +260,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/pop]: https://github.com/stdlib-js/utils-pop/tree/esm
+[@stdlib/utils/pop]: https://github.com/stdlib-js/utils-pop
 
-[@stdlib/utils/push]: https://github.com/stdlib-js/utils-push/tree/esm
+[@stdlib/utils/push]: https://github.com/stdlib-js/utils-push
 
-[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils-unshift/tree/esm
+[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils-unshift
 
 <!-- </related-links> -->
 
